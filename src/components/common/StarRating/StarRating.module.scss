@@ -1,44 +1,44 @@
 .rating {
-	display: flex;
-	.rating__stars {
-		display: flex;
-		.rating__star {
-			.rating__starIcon {
-				font-size: 35px;
-				height: 35px;
-				width: 40px;
-			}
-			.rating__starValue {
-				display: flex;
-				justify-content: center;
-			}
-		}
-	}
+  display: flex;
+  .rating__stars {
+    display: flex;
+    .rating__star {
+      .rating__starIcon {
+        font-size: 35px;
+        height: 35px;
+        width: 40px;
+      }
+      .rating__starValue {
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
 
-	.rating__vote {
-		margin-left: 10px;
-		.rating__voteAverage {
-			position: relative;
-			top: -15px;
-			font-size: 45px;
-			height: 40px;
-			width: 60px;
-			border-bottom: 1px solid white;
-		}
-		.rating__averageHigh {
-			color: #3bb33b;
-		}
-		.rating__averageMedium {
-			color: rgb(129, 126, 126);
-		}
-		.rating__averageLow {
-			color: red;
-		}
-		.rating__voteCount {
-			margin-left: 5px;
-			position: relative;
-			top: -15px;
-			color: #bbb8b8;
-		}
-	}
+  .rating__vote {
+    margin-left: 10px;
+    .rating__voteAverage {
+      position: relative;
+      top: -15px;
+      font-size: 45px;
+      height: 40px;
+      width: 60px;
+      border-bottom: 1px solid white;
+    }
+    .rating__averageHigh {
+      color: #3bb33b;
+    }
+    .rating__averageMedium {
+      color: rgb(129, 126, 126);
+    }
+    .rating__averageLow {
+      color: red;
+    }
+    .rating__voteCount {
+      margin-left: 5px;
+      position: relative;
+      top: -15px;
+      color: #bbb8b8;
+    }
+  }
 }

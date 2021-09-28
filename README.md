@@ -8,10 +8,10 @@ MovieSearch - это приложение по поиску фильмов. Пр
 2. Установите зависимости `npm install`
 3. Запустите проект локально `npm start`
 
-## Stack:
+## Stack
 
-1.ReactJS + хуки
-2.React Router
-3.Axios
-4.Formik
-5.classnames
+1. ReactJS + хуки
+2. React Router
+3. Axios
+4. Formik
+5. classnames
