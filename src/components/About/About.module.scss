@@ -1,0 +1,17 @@
+.about {
+	display: flex;
+	margin: 150px auto;
+	max-width: 700px;
+	flex-direction: column;
+
+	.about__text {
+		font-size: 20px;
+		margin-bottom: 20px;
+	}
+	.about__img {
+		display: block;
+		width: 400px;
+		height: 172px;
+		margin: 0 auto;
+	}
+}

@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
+import Navbar from './components/Navbar/Navbar';
+import MovieSearch from './components/MovieSearch/MovieSearch';
+import MovieIdPage from './components/MovieIdPage/MovieIdPage';
+import About from './components/About/About';
+import Footer from './components/Footer/Footer';
+import './App.scss';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+	return (
+		<BrowserRouter>
+			<div className='wrapper'>
+				<Navbar />
+				<div className='main'>
+					<Switch>
+						<Route exact path='/movies'>
+							<MovieSearch />
+						</Route>
+						<Route exact path='/movies/:id'>
+							<MovieIdPage />
+						</Route>
+						<Route path='/about'>
+							<About />
+						</Route>
+						<Redirect to='/movies' />
+					</Switch>
+				</div>
+				<Footer />
+			</div>
+		</BrowserRouter>
+	);
+};
 
 export default App;

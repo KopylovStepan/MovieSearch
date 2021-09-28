@@ -1,0 +1,68 @@
+.noResults {
+	margin: 0px auto;
+	font-size: 24px;
+	width: 275px;
+}
+.errorMessage {
+	margin: 0px auto;
+	font-size: 24px;
+	width: 600px;
+	color: rgb(224, 69, 69);
+}
+.movies {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	place-items: center;
+	margin-top: 20px;
+
+	.movie {
+		margin-bottom: 20px;
+		width: 200px;
+		height: 370px;
+		position: relative;
+
+		&:hover {
+			cursor: pointer;
+			transform: scale(1.04);
+
+			.movie__title {
+				color: #f2994a;
+			}
+		}
+
+		.movie__poster {
+			width: 200px;
+			height: 300px;
+			border-radius: 10px;
+		}
+		.movie__container {
+			.movie__date {
+				color: rgba(187, 184, 184, 0.767);
+				font-size: 14px;
+			}
+			.movie__averageVal {
+				position: absolute;
+				top: 10px;
+				left: 10px;
+				border-radius: 50%;
+				width: 36px;
+				height: 36px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+
+				color: #ffffff;
+				font-size: 14px;
+			}
+			.movie__averageHigh {
+				background-color: #3bb33b;
+			}
+			.movie__averageMedium {
+				background-color: rgb(129, 126, 126);
+			}
+			.movie__averageLow {
+				background-color: red;
+			}
+		}
+	}
+}
